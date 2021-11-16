@@ -13,5 +13,11 @@ namespace RPSL
         {
             Console.WriteLine("'Welcome to Rock Papers Ciss");
         }
+
+        public void PlayerTurn()
+        {
+            
+
+        }
     }
 }
