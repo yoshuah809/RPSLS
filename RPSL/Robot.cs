@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace RPSL
 {
-    internal class Robot
+    class Robot : Player
     {
+        
+
     }
 }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace RPSL
 {
-    internal class Game
+     class Game
     {
+
+        public void Run()
+        {
+            Console.WriteLine("'Welcome to Rock Papers Ciss");
+        }
     }
 }
