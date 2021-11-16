@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSL
 {
-    class Program
+    internal class Robot
     {
-        static void Main(string[] args)
-        {
-            Game game = new Game();
-            game.run();
-        }
     }
 }
