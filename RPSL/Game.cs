@@ -16,8 +16,8 @@ namespace RPSL
         PlayerHuman playerHuman;
         Robot Robot;
       
-        int player1Score;
-        int player2Score;
+        int player1Score=0;
+        int player2Score=0;
         string Scissors;
         Player PlayersChoice;
 
@@ -67,84 +67,115 @@ namespace RPSL
             if (player2.gestureChoosen == player1.gestureChoosen)
             {
                 Console.WriteLine("No Score this is a tie");
-
-
             }
 
             else if (player1.gestureChoosen == "Scissors" && player2.gestureChoosen == "Paper")
             {
                 player1Score++;
-                Console.WriteLine("player wins round");
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player1.gestureChoosen == "Paper" && player2.gestureChoosen == "Rock")
             {
-                player1Score++;
-                Console.WriteLine();
+                player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 2  wins round");
             }
             else if (player1.gestureChoosen == "Rock" && player2.gestureChoosen == "Lizard")
             {
                 player1Score++;
-                Console.WriteLine();
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player1.gestureChoosen == "Lizard" && player2.gestureChoosen == "Spock")
             {
-                player1Score++;
+                player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 2  wins round");
             }
             else if (player1.gestureChoosen == "Spock" && player2.gestureChoosen == "Scissors")
             {
                 player1Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player1.gestureChoosen == "Scissors" && player2.gestureChoosen == "Lizard")
             {
                 player1Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player1.gestureChoosen == "Lizard" && player2.gestureChoosen == "Paper")
             {
                 player1Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player1.gestureChoosen == "Paper" && player2.gestureChoosen == "Spock")
             {
-                player1Score++;
+                player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player1.gestureChoosen == "Spock" && player2.gestureChoosen == "Rock")
             {
                 player1Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player2.gestureChoosen == "Scissors" && player1.gestureChoosen == "Paper")
             {
                 player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 2  wins round");
             }
             else if (player2.gestureChoosen == "Paper" && player1.gestureChoosen == "Rock")
             {
                 player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 2  wins round");
             }
             else if (player2.gestureChoosen == "Rock" && player1.gestureChoosen == "Lizard")
             {
                 player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 2  wins round");
             }
             else if (player2.gestureChoosen == "Lizard" && player1.gestureChoosen == "Spock")
             {
-                player2Score++;
+                player1Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player2.gestureChoosen == "Spock" && player1.gestureChoosen == "Scissors")
             {
                 player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 2  wins round");
             }
             else if (player2.gestureChoosen == "Scissors" && player1.gestureChoosen == "Lizard")
             {
                 player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 2  wins round");
             }
             else if (player2.gestureChoosen == "Lizard" && player1.gestureChoosen == "Paper")
             {
                 player2Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 2  wins round");
             }
             else if (player2.gestureChoosen == "Paper" && player1.gestureChoosen == "Spock")
             {
-                player2Score++;
+                player1Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             else if (player2.gestureChoosen == "Spock" && player1.gestureChoosen == "Rock")
             {
-                player2Score++;
+                player1Score++;
+                Console.WriteLine($"Player 1 selected {player1.gestureChoosen} and Robot Selected {player2.gestureChoosen}");
+                Console.WriteLine("player 1  wins round");
             }
             Console.WriteLine(" player 1 score is " + player1Score);
             Console.WriteLine(" player 2 score is " + player2Score);

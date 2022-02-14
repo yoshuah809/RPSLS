@@ -20,11 +20,23 @@ namespace RPSL
 
         public override void ChooseGesture()
         {
+            
             Console.WriteLine("Choose a Gesture of Scissors, Paper, Rock, Lizard, or Spock");
-
-            gestureChoosen = Console.ReadLine();
+            DisplayOptions();
+            string option = Console.ReadLine();
+            
+            gestureChoosen = gestures[Convert.ToInt32(option)];
             return;
 
+        }
+
+        static void DisplayOptions()
+        {
+            var p1 = new PlayerHuman();
+            for (int i = 0; i < p1.gestures.Count; i++)
+            {
+                Console.WriteLine($"Select {i} for {p1.gestures[i]}");
+            }
         }
 
 
