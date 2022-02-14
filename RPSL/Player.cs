@@ -13,7 +13,6 @@ namespace RPSL
 
         public List<string> gestures;
         public string gestureChoosen;
-        Random randomNumber = new Random();
 
         public Player()
         {
@@ -30,15 +29,10 @@ namespace RPSL
 
         }
        
-        
-        public override void SetGesture()
-        {
-            int gestureInArray= randomNumber.Next(0, 5);
-            gestureChoosen = gestures[gestureInArray];
+        public abstract void ChooseGesture();
 
-           
 
-        }
+
 
     }
 }

@@ -6,9 +6,24 @@ using System.Threading.Tasks;
 
 namespace RPSL
 {
-    class Robot : Player
+    public class Robot : Player
     {
-        
+      
+        Random ComputerChoice = new Random();
+        public Robot()
+        {
+            AddGesture();
 
+        }
+
+
+        public override void ChooseGesture()
+        {
+            int val = ComputerChoice.Next(0, 5);
+            gestureChoosen = gestures[val];
+
+            return;
+
+        }
     }
 }
